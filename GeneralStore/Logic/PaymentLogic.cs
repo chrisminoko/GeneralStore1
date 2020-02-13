@@ -9,7 +9,7 @@ namespace GeneralStore.Logic
     {
 
         public List<Customer> GetCustomers;
-       
+        Payments Payments = new Payments();
         public PaymentLogic()
         {
             GetCustomers = new List<Customer>()

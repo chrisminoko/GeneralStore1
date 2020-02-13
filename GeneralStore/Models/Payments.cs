@@ -20,11 +20,13 @@ namespace GeneralStore.Models
         public Payments()
         {
         }
-        public Payments(string payementsid,string customerid,PaymentTypes paymenttype)
+        public Payments(string payementsid,string customerid,PaymentTypes paymenttype,Customer customer,Product product)
         {
             PaymentsID = payementsid;
             customerID = customerid;
             PaymentTypes = paymenttype;
+            product = new Product();
+            customer = new Customer();
         }
     }
 }
