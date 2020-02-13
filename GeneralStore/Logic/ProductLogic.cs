@@ -35,7 +35,7 @@ namespace GeneralStore
             products.Add(product);
         }
 
-        public void UpdateSTock(int productQuanity, Product product) 
+        public void UpdateProductQuantity(int productQuanity, Product product) 
         {
             foreach (var productIterm in products)
             {
@@ -46,6 +46,17 @@ namespace GeneralStore
                 }
             }
         
+        }
+
+
+        public int GetProductQuantity(Product InstockProducts)
+        {
+            foreach (var productitem in products) 
+            {
+              return (InstockProducts.ProductName == productitem.ProductName )? InstockProducts.Quantity:-1;
+
+            }
+            return -1;
         }
     }
 }

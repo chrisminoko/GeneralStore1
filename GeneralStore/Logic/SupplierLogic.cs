@@ -12,7 +12,7 @@ namespace GeneralStore
         {
             SupplierProducts = new List<Supplier>()
             {
-                new Supplier("SP101","",SupplierType.Drinks)                                                                                                                                                                                                                )
+                new Supplier("SP101","",SupplierType.Drinks)
             };
         }
     }
